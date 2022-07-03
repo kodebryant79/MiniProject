@@ -6,7 +6,21 @@
     border: 1px solid gold;
     border-radius: 10px;
     margin: 5px;
+    background: linear-gradient(85deg, rgb(65, 53, 65), black);
 }
 table{
     border: 1px solid black;
+}
+.profile{
+    border: 2px solid #b89d0b;
+    border-radius: 10px ;
+}
+.modal-body{
+    background-color: black;
+    border: 1px solid #b89d0b;
+    border-radius: 10px;
+    padding: 5px;
+}
+.modal{
+    margin-top: 10%;
 }
