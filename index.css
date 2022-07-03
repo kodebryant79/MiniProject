@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Sans&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+   font-family: 'PT Sans', sans-serif; */
+
+ /* ---- GLOBAL STYLE ---- */ 
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ---- color palette --- */ 
+:root {
+    --purple : #4f335e;
+    --gold : #b89d0b;
+    --black : #000000;
+    --white : #ffffff;
+    --primary : hsla(279, 30%, 28%, 0.801);
+    --secondary : hsla(244, 95%, 15%, 0.61);
+}
+  /* ---- background body ---- */ 
+
+body {
+
+    margin: 0;
+    background-size: cover;
+    background: linear-gradient(65deg, var(--primary) , var(--secondary) 60%), url("bg.png") no-repeat center center / cover;
+  }
+
+ /* ---- header ---- */ 
+header, footer{
+  background: rgb(77, 2, 55);
+  background: radial-gradient(
+    circle,
+    rgba(79, 51, 94, 0.699) 0%,
+    rgba(194, 127, 2, 0.699) 100%
+  );
+}
+::placeholder{
+  color: #b89d0b !important;
+}
+/* --- navbar --- */
+
+.nav-item:hover {
+  transition: 0.5s ease;
+  padding-left: 5px;
+  padding-right: 5px;
+  letter-spacing: 1px;
+  color: #ffffffc7;
+  font-family: 'PT Sans', sans-serif;;
+}
+
+.nav-item a {
+  color: #b89d0b;
+  /* font-family: "Source Code Pro", monospace; */
+  font-size: 16px;
+  text-shadow: 1px 1px #b89d0b;
+  letter-spacing: 2px;
+}
+
+.nav-item a:hover {
+  color: #4f335e;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  letter-spacing: 3px;
+  transition: 0.5s ease;
+}
+
+.dropdown{
+  text-decoration: none;
+}
+td{text-align: center ;}
+
+section {
+  color: #e7c500;
+}

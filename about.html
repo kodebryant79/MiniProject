@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KodeBryant | About </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="topic.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="images/logo.ico" rel="icon" type="image/png">
+    <link rel="shortcut icon" href="icon.png">
+
+<!--- BOOTSTRAP ---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+          <script src="https://kit.fontawesome.com/72268adad8.js" crossorigin="anonymous"></script>
+<!--- FONTAWESOME --->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+   <header>
+      <!--- Jumbotron-start --->
+      <div class="px-3 pt-3 text-center">
+         <div class="container">
+            <div class="row">
+               <!---  Logo --->
+               <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                  <a href="index.html" class="mb-md-2">
+                     <img style="border-radius: 5px ;" src="logo.png" height="100vh">
+                  </a>
+               </div>
+               <!--- end of logo ---> <!--- start of search --->
+               <div class="col-md-4  m-auto d-none d-md-block">
+                  <form class="d-flex input-group w-auto m-auto mb-3 mb-md-0">
+                     <input autocomplete="off" type="search" class="form-control ms-2 text-warning" placeholder="Search" style="background-color: #4f335e;">
+                     <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search text-warning"></i></span>
+                  </form>
+               </div>
+               <!--- end of form ---> <!--- nav --->
+               <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+                  <!--- navbar --->
+                  <nav class="navbar navbar-expand-lg navbar-dark">
+                     <div class="container justify-content-center justify-content-md-center">
+                        <form class="d-flex input-group w-75 m-auto d-block d-md-none">
+                           <input autocomplete="off" type="search" class="form-control ms-2 text-warning" placeholder="Search" 
+                           style="background-color: #4f335e;">
+                           <span class="input-group-text border-0  d-lg-flex"><i class="fas fa-search text-warning"></i></span>
+                        </form>
+                        <!--- toggle button --->
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navdropdown">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--- toggle inside --->
+                        <div class="collapse navbar-collapse justify-content-end" id="navdropdown">
+                           <ul class="navbar-nav align-items-center">
+                              <li class="nav-item me-3">
+                              <a class="nav-link" href="index.html"> Home </a>
+                              </li>
+                              <li class="nav-item me-3">
+                                 <div class="dropdown">
+                                   <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Topic
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #4f335e;">
+                                      <li><a class="dropdown-item text-center" href="topic.html" style="background-color: #b89d0b; color: #4f335e;
+                                       border: 1px solid black;"> HTML </a></li>
+                                    </ul>
+                                  </div>
+                              </li>
+                              <li class="nav-item me-3">
+                                 <a class="nav-link active" href="about.html"> <i class="fa-solid fa-person"></i> About </a>
+                              </li>
+                            </ul>
+                        </div>
+                     </div>
+                  </nav> 
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!---- whole content ---->
+<section class="container-fluid mt-3">
+   <div class="container"> 
+      <!---- Table ---->
+   <table  class="align-items-center d-flex flex-column p-5 mb-4 mt-2 div1" style="background-color: rgba(27, 23, 23, 0.664);">
+      <!--- image --->
+      <tr>
+         <td style="text-align: center;"><img src="profile.jpg" width=50%" height="200vh" class=" border border-4 border-dark shadow-lg 
+            rounded-circle text-center"></td>
+      </tr>
+      <!--- name and adress --->
+      <tr>
+         <td> 
+         <br> 
+         <span>Bryant B. Rosillo  - Technician</span>
+         <br>
+         <span> Poblacion 32-D Trajera St., Davao City</span></td>
+         <b
+      </tr>
+      <!---- Socials ---->
+      <tr>
+         <td class="row-sm-flex">
+            <span class="col-sm-flex me-2">
+            <br><br>
+             <a href="https://www.linkedin.com/in/bryant-rosillo-5216bb240/"><img src="linkedin.png" width="150px" height="150px"></a>
+            </span>
+            <span class="col-sm-flex me-2">
+               <a href="https://www.facebook.com/profile.php?id=100001190689783"><img src="facebook.png" width="150px" height="148px"></a>
+            </span>
+            <span class="col-sm-flex"> 
+               <a href="#"><img src="instagram.png" width="150px" height="150px" ></a>
+            </span>
+         </td>
+      </tr>
+      <tr>
+         <br>
+        <td><br><p class="text-center" style="font-size: 80%; color:#b89d0b;">&copy; 2022 Kode Bryant Co. </p></td> 
+      </tr>
+   </table>
+   </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

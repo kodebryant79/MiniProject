@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.tab-content {
+  background-color: rgba(27, 23, 23, 0.664) !important;
+  /* border: 1px solid darkslategray; */
+}
+
+.nav-pills button {
+  border-radius: 0 !important;
+}
+
+.display-6 {
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  background: rgba(236, 195, 11, 0.562);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 230, 3, 0) 31%,
+    rgba(240, 176, 2, 0.658) 81%
+  );
+}
+
+.tab-content a {
+  color: lightblue;
+  text-decoration: none;
+}
+
+.tab-content a:hover {
+  color: k;
+}
+
+.nav-pills button.active {
+  background-color: rgba(27, 23, 23, 0.664) !important;
+  color: #b89d0b !important;
+  /* text-shadow: 2px 2px var(--navy) !important; */
+  /* border: 1px solid darkslategray; */
+  border-right: 0px;
+  font-weight: bold;
+}
+
+#v-pills-tab button {
+  color: rgba(236, 201, 0, 0.438);
+}
+.box{
+  background-color: rgba(27, 23, 23, 0.664);
+  width: 25%;
+}
+
+.txt-content{
+  border: 2px solid #b89d0b;
+  border-radius: 10px;
+}

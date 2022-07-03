@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KodeBryant | Topic </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="topic.css">
+    <link href="images/logo.ico" rel="icon" type="image/png">
+    <link rel="shortcut icon" href="icon.png">
+
+<!--- BOOTSTRAP ---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+         
+          <script src="https://kit.fontawesome.com/72268adad8.js" crossorigin="anonymous"></script>
+<!--- FONTAWESOME --->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+   <header>
+      <!--- Jumbotron-start --->
+      <div class="px-3 pt-3 text-center">
+         <div class="container">
+            <div class="row">
+               <!---  Logo --->
+               <div class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0">
+                  <a href="index.html" class="mb-md-2">
+                     <img style="border-radius: 5px ;" src="logo.png" height="100vh">
+                  </a>
+               </div>
+               <!--- end of logo ---> <!--- start of search --->
+               <div class="col-md-4  m-auto d-none d-md-block">
+                  <form class="d-flex input-group w-auto m-auto mb-3 mb-md-0">
+                     <input autocomplete="off" type="search" class="form-control ms-2 text-warning" placeholder="Search" style="background-color: #4f335e;">
+                     <span class="input-group-text border-0 d-none d-lg-flex"><i class="fas fa-search text-warning"></i></span>
+                  </form>
+               </div>
+               <!--- end of form ---> <!--- nav --->
+               <div class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center">
+                  <!--- navbar --->
+                  <nav class="navbar navbar-expand-lg navbar-dark">
+                     <div class="container justify-content-center justify-content-md-center">
+                        <form class="d-flex input-group w-75 m-auto d-block d-md-none">
+                           <input autocomplete="off" type="search" class="form-control ms-2 text-warning" placeholder="Search" 
+                           style="background-color: #4f335e;">
+                           <span class="input-group-text border-0  d-lg-flex"><i class="fas fa-search text-warning"></i></span>
+                        </form>
+                        <!--- toggle button --->
+                        <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navdropdown">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!--- toggle inside --->
+                        <div class="collapse navbar-collapse justify-content-end" id="navdropdown">
+                           <ul class="navbar-nav align-items-center">
+                              <!---- nav links ---->
+                              <li class="nav-item me-3">
+                              <a class="nav-link" href="index.html"> Home </a>
+                              </li>
+                              <li class="nav-item me-3">
+                                 <div class="dropdown">
+                                   <a class="nav-link active" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-book"></i> Topic
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #4f335e;">
+                                      <li><a class="dropdown-item text-center" href="topic.html" style="background-color: #b89d0b; color: #4f335e;
+                                       border: 1px solid black;"> HTML </a></li>
+                                    </ul>
+                                  </div>
+                              </li>
+                              <li class="nav-item me-3">
+                                 <a class="nav-link" href="about.html">About </a>
+                              </li>
+                            </ul>
+                        </div>
+                     </div>
+                  </nav> 
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!--- end of header --->
+   <div class="text-center mt-2 container" style="background-color: rgba(240, 176, 2, 0.658); 
+      padding: 5; border-radius: 20px; font-family: 'Montserrat', sans-serif;">
+      <h1> LIST OF HTML ELEMENTS </h1>
+      </div>
+   <!---- start content ---->
+<section class="container-fluid mt-2" style="background-color: rgba(8, 7, 8, 0.671);">
+      <!--- Topic Area --->
+      <div class="d-flex align-items-start p-2">
+         <!--- Buttons --->
+         <div class="nav shadow-lg flex-column nav-pills w-25 box" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <!--- Introduction --->
+            <button class="nav-link active"  id="v-pills-intro-tab"  data-bs-toggle="pill"  data-bs-target="#intro"
+            type="button"  role="tab" aria-controls="intro"  aria-selected="false">Introduction  to HTML</button>
+
+            <!--- Topic 1 --->
+            <button class="nav-link"  id="v-pills-topic-tab"  data-bs-toggle="pill"  data-bs-target="#topic1"
+            type="button"  role="tab" aria-controls="topic1"  aria-selected="false">HTML Headings</button>
+
+            <!--- Topic 2 --->
+            <button class="nav-link "  id="v-pills-topic2-tab"  data-bs-toggle="pill"  data-bs-target="#topic2"
+            type="button"  role="tab" aria-controls="topic2"  aria-selected="false">HTML Paragraphs</button>
+
+            <!--- Topic 3 --->
+            <button class="nav-link"  id="v-pills-topic3-tab"  data-bs-toggle="pill"  data-bs-target="#topic3"
+            type="button"  role="tab" aria-controls="topic3"  aria-selected="fasle">HTML Links</button>
+
+            <!--- Topic 4 --->
+            <button class="nav-link"  id="v-pills-topic4-tab"  data-bs-toggle="pill"  data-bs-target="#topic4"
+            type="button"  role="tab" aria-controls="topic4"  aria-selected="fasle">HTML Text Formatting</button>
+
+            <!--- Topic 5 --->
+            <button class="nav-link"  id="v-pills-topic5-tab"  data-bs-toggle="pill"  data-bs-target="#topic5"
+            type="button"  role="tab" aria-controls="topic5"  aria-selected="fasle">HTML Comments</button>
+
+            <!--- Topic 6 --->
+            <button class="nav-link"  id="v-pills-topic6-tab"  data-bs-toggle="pill"  data-bs-target="#topic6"
+            type="button"  role="tab" aria-controls="topic6"  aria-selected="fasle">HTML Images</button>
+         </div>
+         <!--- end button --->
+
+         <div class="container-fluid tab-content p-0" id="v-pills-tabContent">
+               <!-- introduction --->
+               <div class="tab-pane fade show active" id="intro"  role="tabpanel" aria-labelledby="v-pills-intro-tab">
+                  <div class="display-6 text-end p-2 mb-2"> Introduction </div>
+                  <div class="d-sm-flex flex-row p-5">
+                  <div class="align-items-start flex-column">
+                     <!--- Description --->
+                     <div class="col-12">
+                        <h2> What is HTML</h2>
+                        <ul>
+                           <li>HTML stands for Hyper Text Markup Language </li>
+                           <li>HTML is the standard markup language for creating Web pages</li>
+                           <li>HTML describes the structure of a Web page</li>
+                           <li>HTML consists of a series of elements</li>
+                           <li>HTML elements tell the browser how to display the content</li>
+                           <li>HTML elements label pieces of content such as "this is a heading", 
+                           "this is a paragraph", "this is a link", etc.</li>
+                        </ul>
+                        <hr>
+                        <hr>
+                     </div>
+                     <!---- Code Show --->
+                     <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+                           <span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color: purple">&gt;</span></span><br>
+                           <span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>html<span class="tagcolor" style="color: purple">&gt;</span></span><br><span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>head<span class="tagcolor" style="color: purple">&gt;</span></span><br><span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>title<span class="tagcolor" style="color: purple">&gt;</span></span>Page Title<span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/title<span class="tagcolor" style="color: purple">&gt;</span></span><br>
+                           <span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/head<span class="tagcolor" style="color: purple">&gt;</span></span><br>
+                           <span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>body<span class="tagcolor" style="color: purple">&gt;</span></span><br><br><span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>h1<span class="tagcolor" style="color: purple">&gt;</span></span>My First Heading<span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/h1<span class="tagcolor" style="color: purple">&gt;</span></span><br><span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>p<span class="tagcolor" style="color: purple">&gt;</span></span>My first paragraph.<span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/p<span class="tagcolor" style="color: purple">&gt;</span></span><br><br>
+                           <span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/body<span class="tagcolor" style="color: purple">&gt;</span></span><br><span class="tagnamecolor" style="color: #b89d0b"><span class="tagcolor" style="color: purple">&lt;</span>/html<span class="tagcolor" style="color: purple">&gt;</span></span>
+                     </div>
+                   </div>
+                   </div>
+               </div>
+            <!--- end of introduction--->
+             <!-- topic 1 --->
+            <div class="tab-pane fade show" id="topic1"  role="tabpanel" aria-labelledby="v-pills-topic-tab">
+               <div class="display-6 text-end p-2 mb-2"> HTML Headings </div>
+               <div class="d-sm-flex flex-row p-5">
+                 <div class="align-items-start flex-column">
+                  <!--- Description --->
+                  <div class="col-12">
+                     <h2> HTML Headings </h2>
+                     <ul>
+                        <li> HTML headings are defined with the < h1 > to < h6 > tags. </li>
+                        <li> < h1 > defines the most important heading. < h6 > defines the least important heading:  </li>
+                     </ul>
+                     <hr><hr>
+                  </div>
+                  <!---- Code Show --->
+                  <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+                     <span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>h1<span class="tagcolor" style="color:purple;">&gt;</span></span>This is heading 1<span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>/h1<span class="tagcolor" style="color:purple;">&gt;</span></span><br>
+                     <span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>h2<span class="tagcolor" style="color:purple;">&gt;</span></span>This is heading 2<span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>/h2<span class="tagcolor" style="color:purple;">&gt;</span></span><br>
+                     <span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>h3<span class="tagcolor" style="color:purple;">&gt;</span></span>This is heading 3<span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>/h3<span class="tagcolor" style="color:purple;">&gt;</span></span>
+                  </div>
+                 </div>
+               </div>
+            </div>
+         <!--- end of topic 1 --->
+         <!--- topic 2 --->
+            <div class="tab-pane fade show " id="topic2"  role="tabpanel" aria-labelledby="v-pills-topic2-tab">
+               <div class="display-6 text-end p-2 mb-2"> HTML Paragraphs </div>
+               <div class="d-sm-flex flex-row p-5">
+                  <div class="align-items-start flex-column">
+                     <!--- description --->
+                     <div class="col-12">
+                        <h2> HTML Paragraphs </h2>
+                        <ul>
+                           <li>HTML paragraphs are defined with the < p > tag:</li>
+                           <li>The HTML < p > element defines a paragraph. A paragraph always starts on a new line.</li>
+                        </ul>
+                        <hr><hr>
+                     </div>
+                     <!---- Code Show --->
+                     <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+                           <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>p<span class="tagcolor" style="color:purple">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>/p<span class="tagcolor" style="color:purple">&gt;</span></span><br>
+                           <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>p<span class="tagcolor" style="color:purple">&gt;</span></span>This is another paragraph.<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>/p<span class="tagcolor" style="color:purple">&gt;</span></span>
+
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         <!--- end of topic 2 --->
+         <!--- topic 3 --->
+            <div class="tab-pane fade show " id="topic3"  role="tabpanel" aria-labelledby="v-pills-topic3-tab">
+               <div class="display-6 text-end p-2 mb-2"> HTML Links </div>
+               <div class="d-sm-flex flex-row p-5">
+                  <div class="align-items-start flex-column">
+                     <!--- Description -->
+                     <div class="col-12">
+                        <h2>HTML Links</h2>
+                        <ul>
+                           <li>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link.</li>
+                        </ul>
+                        <hr><hr>
+                     </div>
+                     <!--- Code Show --->
+                     <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+                        <div class="w3-code notranslate htmlHigh">
+                           <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:rgb(139, 139, 238)">="https://www.w3schools.com"</span></span><span class="tagcolor" style="color:purple">&gt;</span></span>This is a link<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple">&lt;</span>/a<span class="tagcolor" style="color:purple">&gt;</span></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+             </div>
+      <!--- End of topic 3 --->
+      <!--- Topic 4 --->
+      <div class="tab-pane fade show" id="topic4"  role="tabpanel" aria-labelledby="v-pills-topic4-tab">
+         <div class="display-6 text-end p-2 mb-2">HTML Text Formatting </div>
+         <div class="d-sm-flex flex-row p-5">
+           <div class="align-items-start flex-column">
+            <!--- Description --->
+            <div class="col-12">
+               <h2> HTML Formatting Elements </h2>
+               <p> Formatting elements were designed to display special types of text: </p>
+               <ul>
+                  <li> The HTML < b > element defines bold text, without any extra importance. </li>
+                  <li> The HTML < strong > element defines text with strong importance. The content inside is typically displayed in bold.</li>
+                  <li> The HTML < i > element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</li>
+               </ul>
+               <hr><hr>
+            </div>
+
+            <!---- Code Show --->
+            <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+                  <div>
+                  <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>b<span class="tagcolor" style="color:purple;">&gt;</span></span>This text is bold<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>/b<span class="tagcolor" style="color:purple;">&gt;</span></span> </div>
+                  <div>
+                     <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>strong<span class="tagcolor" style="color:purple;">&gt;</span></span>This text is 
+                     important!<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>/strong<span class="tagcolor" style="color:purple;">&gt;</span></span> </div>
+                  <div>
+                     <span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>i<span class="tagcolor" style="color:purple;">&gt;</span></span>This text is italic<span class="tagnamecolor" style="color:#b89d0b"><span class="tagcolor" style="color:purple;">&lt;</span>/i<span class="tagcolor" style="color:purple;">&gt;</span></span> </div>
+                  </div>
+           </div>
+         </div>
+      </div>
+      <!--- End of Topic 4 --->
+      <!--- Topic 5 --->
+      <div class="tab-pane fade show" id="topic5"  role="tabpanel" aria-labelledby="v-pills-topic5-tab">
+         <div class="display-6 text-end p-2 mb-2"> HTML Comments </div>
+         <div class="d-sm-flex flex-row p-5">
+           <div class="align-items-start flex-column">
+            <!--- Description --->
+            <div class="col-12">
+              <h2>HTML Comment Tag</h2> 
+              <ul>
+                  <li> You can add comments to your HTML source by using the following syntax: </li>
+                  <li> With comments you can place notifications and reminders in your HTML code: </li>
+              </ul>
+              <hr><hr>
+            </div>
+
+            <!---- Code Show --->
+            <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+               <span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span><br><br><span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>p<span class="tagcolor" style="color:purple;">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>/p<span class="tagcolor" style="color:purple;">&gt;</span></span><br>
+               <br><span class="commentcolor" style="color:green">&lt;!-- Remember to add more information here --&gt;</span>
+            </div>
+           </div>
+         </div>
+      </div>
+      <!--- End of Topic 5--->
+      <!--- Topic 6 --->
+      <div class="tab-pane fade show" id="topic6"  role="tabpanel" aria-labelledby="v-pills-topic6-tab">
+         <div class="display-6 text-end p-2 mb-2"> HTML Images </div>
+         <div class="d-sm-flex flex-row p-5">
+           <div class="align-items-start flex-column">
+            <!--- Description --->
+            <div class="col-12">
+               <h2> HTML Images </h2>
+               <p> The HTML < img > tag is used to embed an image in a web page.</p>
+               <p> The < img > tag has two required attributes: </p>
+               <ul>
+                  <li> src - Specifies the path to the image </li>
+                  <li> alt - Specifies an alternate text for the image </li>
+               </ul>
+            </div>
+
+            <!---- Code Show --->
+            <div class="col-sm-12 text-white p-2 txt-content" style="background-color: rgba(7, 6, 6, 0.767)">
+               <span class="tagnamecolor" style="color:#b89d0b;"><span class="tagcolor" style="color:purple;">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color: rgb(139, 139, 238);">="<i>url</i>"</span> alt<span class="attributevaluecolor" style="color:rgb(139, 139, 238);">="<em>alternatetext</em>"</span></span><span class="tagcolor" style="color:purple;">&gt;</span></span>
+            </div>
+
+           </div>
+         </div>
+      </div>
+      <!--- End of  Topic Area  --->
+ </div> 
+</div>    
+</section>
+<!--- Footer --->
+<div class=" mt-auto">
+   <footer class="py-3">
+       <div class="text-center justify-content-center" >
+       <a href="https://www.linkedin.com/in/bryant-rosillo-5216bb240/" target="_blank"><i class="fa-brands fa-linkedin-square fa-xl me-2" style="color: #b89d0b;"></i></a> 
+       <a href="https://www.facebook.com/profile.php?id=100001190689783" target="_blank"><i class="fa-brands fa-facebook-square me-2 fa-xl " style="color: #b89d0b;"></i></a>
+       <a href="#" target="_blank"><i class="fa-brands fab fa-instagram-square fa-xl" style="color: #b89d0b;"></i></a>
+       
+       </div>
+       <hr class="w-25 mx-auto" style="color: white;">
+     <p class="text-center" style="font-size: 80%; color:#b89d0b;">&copy; 2022 Kode Bryant Co. </p>
+   </footer>
+</div>
+<!--- End of Footer-->
+  
+   
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
