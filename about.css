@@ -2,19 +2,24 @@
     text-shadow: 25px rgb(241, 241, 241);
 }
 
+/* layout and design of container */
 .div1{
     border: 1px solid gold;
     border-radius: 10px;
     margin: 5px;
     background: linear-gradient(85deg, rgb(65, 53, 65), black);
 }
+
 table{
     border: 1px solid black;
 }
+/* --- picture --- */ 
 .profile{
     border: 2px solid #b89d0b;
     border-radius: 10px ;
 }
+
+/* modal */
 .modal-body{
     background-color: black;
     border: 1px solid #b89d0b;
