@@ -17,22 +17,18 @@ body {
 
 .display-6 {
   font-family: "Bebas Neue", cursive;
-  color: black;
+  color: white;
   background: rgba(236, 195, 11, 0.562);
   background: linear-gradient(
     90deg,
-    rgba(255, 230, 3, 0) 31%,
-    rgba(240, 176, 2, 0.658) 81%
+    rgba(255, 230, 3, 0) 15%,
+    rgba(240, 176, 2, 0.658) 85%
   );
 }
 
 .tab-content a {
   color: lightblue;
   text-decoration: none;
-}
-
-.tab-content a:hover {
-  color: k;
 }
 
 .nav-pills button.active {
