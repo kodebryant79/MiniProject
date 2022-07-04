@@ -52,3 +52,12 @@ body {
   border: 2px solid #b89d0b;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 768px) {
+
+  body{
+    width: 100%;
+  }
+
+  
+}
