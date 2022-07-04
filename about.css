@@ -29,3 +29,10 @@ table{
 .modal{
     margin-top: 10%;
 }
+
+@media screen and (max-width: 780px) {
+    .profile{
+        width: 250px;
+        height: 50vh;
+    }
+}

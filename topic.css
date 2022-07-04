@@ -17,7 +17,7 @@ body {
 
 .display-6 {
   font-family: "Bebas Neue", cursive;
-  color: white;
+  color: black;
   background: rgba(236, 195, 11, 0.562);
   background: linear-gradient(
     90deg,
@@ -55,8 +55,9 @@ body {
 
 @media screen and (max-width: 768px) {
 
-  body{
-    width: 100%;
+  #v-pills-tab{
+    float: inline-start;
+    flex: content;
   }
 
   
